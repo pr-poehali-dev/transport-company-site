@@ -26,8 +26,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         <a href="#" className="font-display text-xl font-semibold tracking-widest uppercase">
-          <span className="text-foreground">Транс</span>
-          <span style={{ color: "hsl(var(--accent))" }}>Логистик</span>
+          <span className="text-foreground">Юлми</span>
+          <span style={{ color: "hsl(var(--accent))" }}>транс</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

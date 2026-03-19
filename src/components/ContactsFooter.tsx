@@ -162,10 +162,10 @@ export default function ContactsFooter() {
       <footer className="bg-black py-8 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="font-display text-lg font-semibold tracking-widest uppercase text-white">
-            Транс<span style={{ color: "hsl(var(--accent))" }}>Логистик</span>
+            Юлми<span style={{ color: "hsl(var(--accent))" }}>транс</span>
           </span>
           <span className="font-body text-xs text-white/30">
-            © 2009–2026 ТрансЛогистик. Все права защищены.
+            © 2009–2026 Юлмитранс. Все права защищены.
           </span>
           <div className="flex items-center gap-6">
             {navLinks.map((l) => (
