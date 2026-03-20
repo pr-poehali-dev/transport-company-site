@@ -150,15 +150,8 @@ export default function ServicesAboutRoutes() {
               <p className="font-body text-base text-muted-foreground leading-relaxed mb-5">
                 Юлмитранс — федеральный оператор грузоперевозок с 2009 года. Мы работаем на рынке транспортной логистики уже более 15 лет и за это время выстроили репутацию надёжного партнёра для сотен компаний по всей стране.
               </p>
-              <p className="font-body text-base text-muted-foreground leading-relaxed mb-8">
-                Наш собственный автопарк включает более 200 единиц современной техники: от малотоннажных фургонов до большегрузных тягачей с рефрижераторами. Мы доставляем грузы точно в срок — и это не просто слова.
-              </p>
-
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { icon: "MapPin", text: "Представительства в 28 городах" },
-                  { icon: "Users", text: "Более 800 сотрудников" },
-                  { icon: "Award", text: "ISO 9001 сертифицированы" },
                   { icon: "Headphones", text: "Поддержка 24/7" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-start gap-3">

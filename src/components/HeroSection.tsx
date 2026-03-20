@@ -5,9 +5,7 @@ const HERO_IMG = "https://cdn.poehali.dev/projects/19ebe227-2f43-438f-9d5e-19de3
 
 const stats = [
   { value: "15+", label: "лет на рынке" },
-  { value: "200+", label: "единиц техники" },
   { value: "50 000+", label: "доставок в год" },
-  { value: "99%", label: "грузов в срок" },
 ];
 
 function useInView(threshold = 0.15) {
