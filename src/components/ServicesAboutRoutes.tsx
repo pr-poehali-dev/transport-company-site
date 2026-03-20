@@ -190,7 +190,6 @@ export default function ServicesAboutRoutes() {
       <section id="routes" className="py-24 bg-background">
         <div ref={routesAnim.ref} className="max-w-7xl mx-auto px-6">
           <div
-            className="mb-14"
             style={{
               opacity: routesAnim.inView ? 1 : 0,
               transform: routesAnim.inView ? "none" : "translateY(20px)",
@@ -206,57 +205,13 @@ export default function ServicesAboutRoutes() {
                 Куда везём
               </span>
             </div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold uppercase text-foreground">
-              Популярные маршруты
+            <h2 className="font-display text-4xl md:text-5xl font-bold uppercase text-foreground mb-6">
+              Работаем по всей России
             </h2>
+            <p className="font-body text-base text-muted-foreground max-w-2xl leading-relaxed">
+              Осуществляем грузоперевозки во все регионы страны — от Калининграда до Владивостока. Уточните маршрут и стоимость у нашего менеджера.
+            </p>
           </div>
-
-          <div className="divide-y divide-border border-y border-border">
-            {routes.map((r, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-between py-5 group hover:bg-secondary px-4 -mx-4 transition-colors duration-150 cursor-pointer"
-                style={{
-                  opacity: routesAnim.inView ? 1 : 0,
-                  transform: routesAnim.inView ? "none" : "translateX(-20px)",
-                  transition: `all 0.5s ease ${i * 0.07}s`,
-                }}
-              >
-                <div className="flex items-center gap-4 md:gap-10 flex-1">
-                  <span className="font-display text-lg md:text-2xl font-semibold uppercase text-foreground min-w-[130px]">
-                    {r.from}
-                  </span>
-                  <div className="flex-1 flex items-center gap-2 text-muted-foreground">
-                    <div className="h-px flex-1 bg-border" />
-                    <Icon name="ArrowRight" size={14} />
-                    <div className="h-px flex-1 bg-border" />
-                  </div>
-                  <span className="font-display text-lg md:text-2xl font-semibold uppercase text-foreground min-w-[130px] text-right">
-                    {r.to}
-                  </span>
-                </div>
-                <div className="hidden md:flex items-center gap-10 ml-10">
-                  <div className="text-right">
-                    <div className="font-body text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Расстояние</div>
-                    <div className="font-display text-base font-semibold">{r.km}</div>
-                  </div>
-                  <div className="text-right">
-                    <div className="font-body text-xs text-muted-foreground uppercase tracking-wider mb-0.5">Срок</div>
-                    <div className="font-display text-base font-semibold" style={{ color: "hsl(var(--accent))" }}>
-                      {r.days}
-                    </div>
-                  </div>
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: "hsl(var(--accent))" }}>
-                    <Icon name="ArrowUpRight" size={18} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="font-body text-sm text-muted-foreground mt-6">
-            Работаем по всем направлениям России и СНГ — уточните маршрут у нашего менеджера.
-          </p>
         </div>
       </section>
     </>
