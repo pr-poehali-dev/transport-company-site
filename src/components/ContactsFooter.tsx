@@ -59,25 +59,46 @@ export default function ContactsFooter() {
               </p>
 
               <div className="space-y-6">
-                {[
-                  { icon: "Phone", label: "Телефон", value: "+7 (800) 123-45-67", sub: "Бесплатно по России" },
-                  { icon: "Mail", label: "Email", value: "info@translogistic.ru", sub: "Ответим в течение часа" },
-                  { icon: "MapPin", label: "Главный офис", value: "Москва, ул. Транспортная, 1", sub: "Пн–Пт 9:00–18:00" },
-                ].map((c) => (
-                  <div key={c.label} className="flex items-start gap-4">
-                    <div
-                      className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5"
-                      style={{ color: "hsl(var(--accent))" }}
-                    >
-                      <Icon name={c.icon} size={20} />
-                    </div>
-                    <div>
-                      <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">{c.label}</div>
-                      <div className="font-body text-base font-medium text-white">{c.value}</div>
-                      <div className="font-body text-xs text-white/40">{c.sub}</div>
-                    </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
+                    <Icon name="Phone" size={20} />
                   </div>
-                ))}
+                  <div>
+                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Телефоны</div>
+                    {[
+                      "+7 (912) 468-51-41",
+                      "+7 (912) 888-43-00",
+                      "+7 (912) 888-73-00",
+                      "+7 (912) 888-00-43",
+                    ].map((phone) => (
+                      <a key={phone} href={`tel:${phone.replace(/\D/g, "")}`} className="block font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
+                        {phone}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
+                    <Icon name="Mail" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Email</div>
+                    <a href="mailto:yulmitrans@mail.ru" className="font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
+                      yulmitrans@mail.ru
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
+                    <Icon name="Send" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Telegram</div>
+                    <a href="https://t.me/Yeezy18" target="_blank" rel="noopener noreferrer" className="font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
+                      @Yeezy18
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
