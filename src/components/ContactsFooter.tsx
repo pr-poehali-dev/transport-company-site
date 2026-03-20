@@ -39,73 +39,6 @@ export default function ContactsFooter() {
               style={{
                 opacity: contactsAnim.inView ? 1 : 0,
                 transform: contactsAnim.inView ? "none" : "translateY(24px)",
-                transition: "all 0.6s ease",
-              }}
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="h-px w-10" style={{ background: "hsl(var(--accent))" }} />
-                <span
-                  className="font-body text-xs font-medium uppercase tracking-[0.2em]"
-                  style={{ color: "hsl(var(--accent))" }}
-                >
-                  Связаться с нами
-                </span>
-              </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold uppercase text-white mb-6">
-                Контакты
-              </h2>
-              <p className="font-body text-base text-white/60 leading-relaxed mb-10">
-                Готовы ответить на любые вопросы и рассчитать стоимость перевозки для вашего груза.
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
-                    <Icon name="Phone" size={20} />
-                  </div>
-                  <div>
-                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Телефоны</div>
-                    {[
-                      "+7 (912) 468-51-41",
-                      "+7 (912) 888-43-00",
-                      "+7 (912) 888-73-00",
-                      "+7 (912) 888-00-43",
-                    ].map((phone) => (
-                      <a key={phone} href={`tel:${phone.replace(/\D/g, "")}`} className="block font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
-                        {phone}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
-                    <Icon name="Mail" size={20} />
-                  </div>
-                  <div>
-                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Email</div>
-                    <a href="mailto:yulmitrans@mail.ru" className="font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
-                      yulmitrans@mail.ru
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
-                    <Icon name="Send" size={20} />
-                  </div>
-                  <div>
-                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Telegram</div>
-                    <a href="https://t.me/Yeezy18" target="_blank" rel="noopener noreferrer" className="font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
-                      @Yeezy18
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              style={{
-                opacity: contactsAnim.inView ? 1 : 0,
-                transform: contactsAnim.inView ? "none" : "translateY(24px)",
                 transition: "all 0.6s ease 0.2s",
               }}
             >
@@ -175,6 +108,74 @@ export default function ContactsFooter() {
                 </div>
               </div>
             </div>
+
+            <div
+              style={{
+                opacity: contactsAnim.inView ? 1 : 0,
+                transform: contactsAnim.inView ? "none" : "translateY(24px)",
+                transition: "all 0.6s ease",
+              }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="h-px w-10" style={{ background: "hsl(var(--accent))" }} />
+                <span
+                  className="font-body text-xs font-medium uppercase tracking-[0.2em]"
+                  style={{ color: "hsl(var(--accent))" }}
+                >
+                  Связаться с нами
+                </span>
+              </div>
+              <h2 className="font-display text-4xl md:text-5xl font-bold uppercase text-white mb-6">
+                Контакты
+              </h2>
+              <p className="font-body text-base text-white/60 leading-relaxed mb-10">
+                Готовы ответить на любые вопросы и рассчитать стоимость перевозки для вашего груза.
+              </p>
+
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
+                    <Icon name="Phone" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Телефоны</div>
+                    {[
+                      "+7 (912) 468-51-41",
+                      "+7 (912) 888-43-00",
+                      "+7 (912) 888-73-00",
+                      "+7 (912) 888-00-43",
+                    ].map((phone) => (
+                      <a key={phone} href={`tel:${phone.replace(/\D/g, "")}`} className="block font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
+                        {phone}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
+                    <Icon name="Mail" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Email</div>
+                    <a href="mailto:yulmitrans@mail.ru" className="font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
+                      yulmitrans@mail.ru
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 mt-0.5" style={{ color: "hsl(var(--accent))" }}>
+                    <Icon name="Send" size={20} />
+                  </div>
+                  <div>
+                    <div className="font-body text-xs text-white/40 uppercase tracking-wider mb-0.5">Telegram</div>
+                    <a href="https://t.me/Yeezy18" target="_blank" rel="noopener noreferrer" className="font-body text-base font-medium text-white hover:opacity-80 transition-opacity">
+                      @Yeezy18
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
